@@ -3,6 +3,7 @@ from typing import Optional
 from fastapi import FastAPI
 
 import random  # randomライブラリを追加
+from fastapi.responses import HTMLResponse #インポート
 
 app = FastAPI()
 
