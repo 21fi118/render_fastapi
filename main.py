@@ -38,11 +38,17 @@ def index():
     html_content = """
     <html>
         <head>
-            <title>Some HTML in here</title>
+            <title>21fi118's HTML</title>
         </head>
         <body>
-            <h1>Look ma! HTML!</h1>
+            <h1>Hello! There is 21fi118's HTML!</h1>
+            <h2>I want to go Thailand 🇹🇭</h2>
+            <h2>I need money...</h2>
         </body>
     </html>
     """
     return HTMLResponse(content=html_content, status_code=200)
+
+@app.post("/present")
+async def new_naming(present):
+    return {"response": f"サーバです。いつもお世話になっています！ {present}こちらこそありがとう。お返しは花束です💐"}
